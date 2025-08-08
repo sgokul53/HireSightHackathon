@@ -1,4 +1,4 @@
-const  GEMINI_API_KEY = 'AIzaSyA6AIhJ3ZRt1I2A14D5VewtJBL_Ui_O2pA'
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent'
 
 export const generateAIRanking = async (jobDescription, candidates) => {
